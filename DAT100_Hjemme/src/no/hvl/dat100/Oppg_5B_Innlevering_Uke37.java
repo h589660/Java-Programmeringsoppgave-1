@@ -12,6 +12,7 @@ public class Oppg_5B_Innlevering_Uke37 {
 		String resultat = ""; 
 		
 		if (poeng <= -1) {
+			elever ++;
 			resultat += "Ugyldig inntasting!";
 		}
 		else if (poeng <= 39) {

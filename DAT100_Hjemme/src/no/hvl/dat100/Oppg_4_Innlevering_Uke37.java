@@ -10,21 +10,22 @@ public class Oppg_4_Innlevering_Uke37 {
 		String resultat = "";
 		
 		if (inntekt <= 180800) {
-			resultat += "Ingen ekstra trinnskatt";
+			resultat += "Ingen trinnskatt";
 		}
 		else if (inntekt <= 254500) {
-			resultat += "1.9% ekstra trinnskatt";
+			resultat = ""+inntekt*0.019;
 		}
 		else if (inntekt <= 639750) {
-			resultat += "4.2% ekstra trinnskatt";
+			resultat = ""+inntekt*0.042;
 		}
 		else if (inntekt <= 999550) {
-			resultat += "13.2% ekstra trinnskatt";
+			resultat = ""+inntekt*0.13;
 		}
 		else {
-			resultat += "16.2% ekstra trinnskatt";
+			resultat = ""+inntekt*0.162;
 		}
 		
 		showMessageDialog(null, resultat);
 	}
+	
 }
